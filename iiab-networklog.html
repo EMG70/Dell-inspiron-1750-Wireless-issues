@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.7.2 (Linux)"/>
+	<meta name="created" content="2022-07-28T16:40:37.369743384"/>
+	<meta name="changed" content="2022-07-28T16:40:57.912867738"/>
+</head>
+<body lang="en-GB" dir="ltr"><p>edmagara@box:~$ tail -50
+/opt/iiab/iiab/iiab-network.log</p>
+<p>2022-07-28 15:40:48,044 p=20673 u=root n=ansible | changed:
+[127.0.0.1]</p>
+<p>2022-07-28 15:40:48,193 p=20673 u=root n=ansible | TASK [network :
+Enable &amp; Restart networkd-dispatcher.service except for Linux
+Mint] ***</p>
+<p>2022-07-28 15:40:48,342 p=20673 u=root n=ansible | skipping:
+[127.0.0.1]</p>
+<p>2022-07-28 15:40:48,438 p=20673 u=root n=ansible | TASK [network :
+Reload systemd] ************************************************</p>
+<p>2022-07-28 15:40:48,572 p=20673 u=root n=ansible | skipping:
+[127.0.0.1]</p>
+<p>2022-07-28 15:40:48,693 p=20673 u=root n=ansible | TASK [network :
+Restart the NetworkManager service] ****************************</p>
+<p>2022-07-28 15:40:48,773 p=20673 u=root n=ansible | skipping:
+[127.0.0.1]</p>
+<p>2022-07-28 15:40:48,873 p=20673 u=root n=ansible | TASK [network :
+systemd-networkd in use] ***************************************</p>
+<p>2022-07-28 15:40:48,972 p=20673 u=root n=ansible | skipping:
+[127.0.0.1]</p>
+<p>2022-07-28 15:40:49,226 p=20673 u=root n=ansible | TASK [network :
+Raspbian uses dhcpcd only with no N-M or SYS-NETD active] ******</p>
+<p>2022-07-28 15:40:49,318 p=20673 u=root n=ansible | skipping:
+[127.0.0.1]</p>
+<p>2022-07-28 15:40:49,439 p=20673 u=root n=ansible | TASK [network :
+Not RPi, Not NetworkManager, Not systemd-networkd in use] ******</p>
+<p>2022-07-28 15:40:49,537 p=20673 u=root n=ansible | skipping:
+[127.0.0.1]</p>
+<p>2022-07-28 15:40:49,654 p=20673 u=root n=ansible | TASK [network :
+Restart services] **********************************************</p>
+<p>2022-07-28 15:40:49,907 p=20673 u=root n=ansible | included:
+/opt/iiab/iiab/roles/network/tasks/restart.yml for 127.0.0.1</p>
+<p>2022-07-28 15:40:50,101 p=20673 u=root n=ansible | TASK [network :
+Restart wpa_supplicant service] ********************************</p>
+<p>2022-07-28 15:40:52,287 p=20673 u=root n=ansible | changed:
+[127.0.0.1] =&gt; (item=wpa_supplicant)</p>
+<p>2022-07-28 15:40:52,383 p=20673 u=root n=ansible | TASK [network :
+Create /etc/hostapd/hostapd.conf and backup .iiab from template if
+needed] ***</p>
+<p>2022-07-28 15:40:55,337 p=20673 u=root n=ansible | changed:
+[127.0.0.1] =&gt; (item={'src': 'hostapd/hostapd.conf.j2', 'dest':
+'/etc/hostapd/hostapd.conf'})</p>
+<p>2022-07-28 15:40:57,218 p=20673 u=root n=ansible | changed:
+[127.0.0.1] =&gt; (item={'src': 'hostapd/hostapd.conf.j2', 'dest':
+'/etc/hostapd/hostapd.conf.iiab'})</p>
+<p>2022-07-28 15:40:57,336 p=20673 u=root n=ansible | TASK [network :
+Restart hostapd when WiFi is present but not when using WiFi as
+gateway with wifi_up_down False] ***</p>
+<p>2022-07-28 15:41:00,609 p=20673 u=root n=ansible | fatal:
+[127.0.0.1]: FAILED! =&gt; {&quot;changed&quot;: false, &quot;msg&quot;:
+&quot;Unable to start service hostapd: Job for hostapd.service failed
+because the control process exited with error code.\nSee \&quot;systemctl
+status hostapd.service\&quot; and \&quot;journalctl -xe\&quot; for
+details.\n&quot;}</p>
+<p>2022-07-28 15:41:00,614 p=20673 u=root n=ansible | PLAY RECAP
+*********************************************************************</p>
+<p>2022-07-28 15:41:00,615 p=20673 u=root n=ansible | 127.0.0.1      
+           : ok=99   changed=38   unreachable=0    failed=1   
+skipped=69   rescued=0    ignored=0   
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p>DEVICE   TYPE      STATE        CONNECTION    
+</p>
+<p>wlp12s0  wifi      connected    Auto SKY3C17E 
+</p>
+<p>br0      bridge    connected    br0           
+</p>
+<p>tun0     tun       connected    tun0          
+</p>
+<p>enp9s0   ethernet  unavailable  --            
+</p>
+<p>lo       loopback  unmanaged    --            
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p>NAME                UUID                                  TYPE    
+ DEVICE  
+</p>
+<p>Auto SKY3C17E       803b5db4-e567-4b86-aea0-78882efce608  wifi    
+ wlp12s0 
+</p>
+<p>br0                 29f09c1e-5f0e-4f24-a9dd-28782f4bbe25  bridge  
+ br0     
+</p>
+<p>tun0                23ac7112-04ee-4c65-95dc-085ec970be4a  tun     
+ tun0    
+</p>
+<p>Wired connection 1  7eae1869-7276-3359-9890-c92fd208ec28  ethernet
+ --      
+</p>
+<p>default via 192.168.0.1 dev wlp12s0 proto dhcp metric 600 
+</p>
+<p>10.8.0.0/18 via 10.8.0.41 dev tun0 
+</p>
+<p>10.8.0.1 via 10.8.0.41 dev tun0 
+</p>
+<p>10.8.0.41 dev tun0 proto kernel scope link src 10.8.0.42 
+</p>
+<p>10.10.10.0/24 dev br0 proto kernel scope link src 10.10.10.10 
+</p>
+<p>169.254.0.0/16 dev wlp12s0 scope link metric 1000 
+</p>
+<p>192.168.0.0/24 dev wlp12s0 proto kernel scope link src
+192.168.0.32 metric 600 
+</p>
+<p>5: br0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 master
+br0 br0</p>
+<p><br/>
+<br/>
+
+</p>
+<p>iiab-network run start: Thu 28 Jul 15:35:36 BST 2022</p>
+<p>iiab-network run end: Thu 28 Jul 15:41:00 BST 2022</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p>edmagara@box:~$ tail -25 /opt/iiab/iiab/iiab-network.log</p>
+</body>
+</html>
